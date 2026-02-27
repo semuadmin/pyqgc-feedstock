@@ -1,5 +1,5 @@
 {% set name = "pyqgc" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyqgc-{{ version }}.tar.gz
-  sha256: a4c7a3e3e25c5d2e6610fe75966d4a4fe32f86d8e16446bd23c19728a82edb52
+  sha256: 3ad3fe6e865951d05cc87307f7263d4f5bd0a8023bec9beb24501310afbc0671
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
